@@ -1,0 +1,166 @@
+:root {
+    --dark-bg: #121212;
+    --card-bg: #1e1e1e;
+    --card-border: #333;
+    --primary: #bb86fc;
+    --primary-hover: #9a67ea;
+    --text: #e0e0e0;
+    --text-secondary: #b0b0b0;
+    --success: #03dac6;
+    --error: #cf6679;
+    --file-preview: #2a2a2a;
+    --upload-area: #252525;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--dark-bg);
+    color: var(--text);
+    line-height: 1.6;
+    padding: 20px;
+    margin: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    border: 1px solid var(--card-border);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #333;
+}
+
+h1 {
+    color: var(--primary);
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+}
+
+.card {
+    background: rgba(30,30,30,0.7);
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 25px;
+    border: 1px solid var(--card-border);
+}
+
+h2 {
+    color: var(--text);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 6px;
+    border: 1px solid #333;
+    background: #2a2a2a;
+    color: var(--text);
+    font-size: 16px;
+}
+
+.upload-area {
+    border: 2px dashed #444;
+    padding: 40px 20px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 8px;
+    background: var(--upload-area);
+    margin: 15px 0;
+    transition: all 0.3s;
+}
+
+.upload-area:hover {
+    border-color: var(--primary);
+    background: #2a2a2a;
+}
+
+.upload-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+    display: block;
+    color: var(--text-secondary);
+}
+
+.btn {
+    background: var(--primary);
+    color: #121212;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.status-item {
+    margin-bottom: 15px;
+    padding: 15px;
+    background: #252525;
+    border-radius: 8px;
+    border-left: 3px solid var(--primary);
+}
+
+#statusText {
+    font-weight: 600;
+}
+
+.file-preview {
+    padding: 15px;
+    background: var(--file-preview);
+    border-radius: 8px;
+    margin-top: 15px;
+    border-left: 3px solid var(--primary);
+}
+
+.success-message {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(3,218,198,0.15);
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid rgba(3,218,198,0.3);
+}
+
+.success-message a {
+    color: var(--success);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    border-top: 1px solid #333;
+}
