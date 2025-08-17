@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trust-Seal Notary Service</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Trust-Seal Notarization</h1>
+            <p class="tagline">Secure blockchain document verification</p>
+        </header>
+        
+        <div class="card">
+            <h2>Notarize Document</h2>
+            <div class="form-group">
+                <label>Document Name</label>
+                <input type="text" id="documentName" placeholder="e.g., Business Contract">
+            </div>
+            <div class="form-group">
+                <label>Upload Document</label>
+                <div class="upload-area" id="uploadArea">
+                    <i class="upload-icon">📁</i>
+                    <p>Click to upload file</p>
+                </div>
+                <input type="file" id="fileInput" hidden>
+                <div id="fileInfo"></div>
+            </div>
+            <button id="notarizeBtn" class="btn">Notarize on Blockchain</button>
+        </div>
+
+        <div class="card">
+            <h2>Verification Status</h2>
+            <div id="statusPanel">
+                <div class="status-item">
+                    <label>Document Hash:</label>
+                    <span id="documentHash">-</span>
+                </div>
+                <div class="status-item">
+                    <label>Transaction ID:</label>
+                    <span id="txId">-</span>
+                </div>
+                <div class="status-item">
+                    <label>Status:</label>
+                    <span id="statusText">Ready</span>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Powered by VeChain Thor | Testnet</p>
+        </footer>
+    </div>
+
+    <script src="/app.js"></script>
+</body>
+</html>
